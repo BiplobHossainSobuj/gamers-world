@@ -3,6 +3,8 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* shared style */
@@ -167,7 +169,7 @@ nav li {
 }
 
 /* play instant's section style  */
-.play-instant-container{
+.play-instant-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,24 +177,90 @@ nav li {
     padding: 120px 120px;
     background: #fcfbfb;
 }
-.playing-info-container{
+
+.playing-info-container {
     text-align: right;
 }
-.players img{
+
+.players img {
     width: 80%;
 }
-#player-hero{
+
+#player-hero {
     position: relative;
     margin-left: 200px;
 }
-#player-heroin{
+
+#player-heroin {
     position: relative;
     margin-top: -280px;
     margin-left: 50px;
     width: 60%;
-    
+
 }
 
+/* footer styles */
+
+.footer-container {
+    padding: 125px 5px;
+    background: #0B0223;
+    color: #FFFFFF99;
+
+}
+
+.footer-info-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.footer-info-container h1 {
+    color: #FFF;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.service-container p {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.important-links-container {
+    /* display: grid;
+    grid-template-columns: repeat(6,1fr); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 40px;
+}
+
+.important-links-container i {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.our-policy-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.copyright-info {
+    text-align: center;
+    padding-top: 50px;
+}
 
 /* Smaller(Mobile) devices query*/
 @media screen and (max-width:576px) {
@@ -223,34 +291,54 @@ nav li {
     .btn-secondary {
         padding: 15px 30px;
     }
-    .online-game-container{
+
+    .online-game-container {
         padding: 0;
     }
+
     .online-games {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .game p {
         text-align: center;
     }
-    .play-instant-container{
+
+    .play-instant-container {
         flex-direction: column;
         padding: 0;
         text-align: start;
     }
+
     .playing-info-container {
         text-align: center;
     }
-    #player-hero{
+
+    #player-hero {
         position: relative;
         margin: 0 10%;
     }
-    #player-heroin{
+
+    #player-heroin {
 
         margin-left: 0;
         margin-top: -110px;
     }
-
-
+    .service-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 0 5px;
+    }
+    .important-links-container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding-left: 15%;
+    }
+    .our-policy-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 15%;
+    }
 
 }
 
@@ -282,24 +370,29 @@ nav li {
         padding: 15px 30px;
     }
 
-    .online-game-container{
+    .online-game-container {
         padding: 0;
     }
+
     .online-games {
         grid-template-columns: repeat(2, 1fr);
     }
-    .play-instant-container{
+
+    .play-instant-container {
         flex-direction: column;
         padding: 0;
         text-align: center;
     }
+
     .playing-info-container {
         text-align: center;
     }
-    #player-hero{
+
+    #player-hero {
         margin-left: 100px;
     }
-    #player-heroin{
+
+    #player-heroin {
         margin-left: -10px;
     }
 
