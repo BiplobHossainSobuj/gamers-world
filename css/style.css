@@ -4,16 +4,40 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+
 /* shared style */
-.g-beautification{
+.g-beautification {
     color: #FF42A5;
 }
-.text-primary{
-    color: #0B0223;
+
+.btn-primary {
+    background-color: #6b647a;
+    color: #FFFFFF;
+    padding: 21px 40px;
+    border-radius: 48px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    margin-right: 15px;
 }
 
+.btn-secondary {
+    background-color: #4EC5F7;
+    color: #FFFFFF;
+    padding: 21px 40px;
+    border-radius: 48px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+}
+
+/* header styles */
 header {
     background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    
 }
 
 nav {
@@ -67,31 +91,86 @@ nav li {
     height: 24px;
 }
 
+/* top banner styles */
+.top-banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    background: #fcfbfb;
+}
 
+.top-banner-title {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#top-banner-goat {
+    font-size: 95px;
+    font-weight: 800;
+    color: #8758F1;
+
+}
+
+.top-banner-info-container p {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+.top-banner-img-container img{
+    width: 100%;
+}
 /* Smaller(Mobile) devices query*/
 @media screen and (max-width:576px) {
-    nav{
+    nav {
         flex-direction: column;
         padding: 10% 5%;
     }
-    nav ul{
+
+    nav ul {
         flex-direction: column;
         padding-left: 0;
     }
-    
+
     .nav-item-follow {
         margin-top: 60px;
     }
-    
+    .top-banner-container{
+        flex-direction: column-reverse;
+        padding: 0 2%;
+    }
+    .btn-primary{
+        padding: 15px 30px;
+    }
+    .btn-secondary{
+        padding: 15px 30px;
+    }
+
 }
 
 /* Medium(pad/tab) devices query*/
 @media screen and (min-width:576.1px) and (max-width:992px) {
-    nav{
+    nav {
         flex-direction: column;
         padding: 10% 5%;
     }
-    nav ul{
+
+    nav ul {
         padding-left: 0;
     }
+    .top-banner-container{
+        padding: 0 2%;
+    }
+    .top-banner-title {
+        font-size: 38px;
+    }
+    .btn-primary{
+        padding: 15px 30px;
+    }
+    .btn-secondary{
+        padding: 15px 30px;
+    }
+
 }
