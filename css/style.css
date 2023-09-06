@@ -10,6 +10,22 @@
     color: #FF42A5;
 }
 
+.text-beutify {
+    color: #8758F1;
+}
+
+.text-primary {
+    color: #0B0223;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.text-secondary {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+}
+
 .btn-primary {
     background-color: #6b647a;
     color: #FFFFFF;
@@ -37,7 +53,7 @@
 header {
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    
+
 }
 
 nav {
@@ -96,8 +112,10 @@ nav li {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 280px;
     background: #fcfbfb;
+    margin-bottom: 80px;
+    padding-bottom: 10px;
 }
 
 .top-banner-title {
@@ -119,9 +137,37 @@ nav li {
     font-size: 20px;
     font-weight: 500;
 }
-.top-banner-img-container img{
+
+.top-banner-img-container img {
     width: 100%;
 }
+
+/* online games style  */
+
+.online-game-container {
+    text-align: center;
+    padding: 40px 240px;
+    background-color: #FFFFFF;
+}
+
+.online-games {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    padding-top: 50px;
+    gap: 24px;
+}
+
+.game p {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: start;
+}
+
+
+
 /* Smaller(Mobile) devices query*/
 @media screen and (max-width:576px) {
     nav {
@@ -137,15 +183,28 @@ nav li {
     .nav-item-follow {
         margin-top: 60px;
     }
-    .top-banner-container{
+
+    .top-banner-container {
         flex-direction: column-reverse;
         padding: 0 2%;
+        gap: 50px;
     }
-    .btn-primary{
+
+    .btn-primary {
         padding: 15px 30px;
     }
-    .btn-secondary{
+
+    .btn-secondary {
         padding: 15px 30px;
+    }
+    .online-game-container{
+        padding: 0;
+    }
+    .online-games {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .game p {
+        text-align: center;
     }
 
 }
@@ -160,17 +219,29 @@ nav li {
     nav ul {
         padding-left: 0;
     }
-    .top-banner-container{
+
+    .top-banner-container {
         padding: 0 2%;
+        gap: 50px;
     }
+
     .top-banner-title {
         font-size: 38px;
     }
-    .btn-primary{
+
+    .btn-primary {
         padding: 15px 30px;
     }
-    .btn-secondary{
+
+    .btn-secondary {
         padding: 15px 30px;
+    }
+
+    .online-game-container{
+        padding: 0;
+    }
+    .online-games {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
